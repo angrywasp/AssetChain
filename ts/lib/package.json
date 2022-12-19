@@ -1,0 +1,15 @@
+{
+    "name": "@angrywasp/assetchain-client",
+    "version": "0.1.2",
+    "description": "Client side library for AssetChain",
+    "main": "./index.js",
+    "typings": "./index.d.ts",
+    "author": "Angry Wasp",
+    "license": "BSD-3-Clause",
+    "dependencies": {
+        "axios": "^0.25.0"
+    },
+    "typeRoots": [
+        "node_modules/@types"
+    ]
+}

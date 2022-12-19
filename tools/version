@@ -1,0 +1,4 @@
+#!/bin/bash
+
+CONFIG=Release
+VERSION=0.0.2.0

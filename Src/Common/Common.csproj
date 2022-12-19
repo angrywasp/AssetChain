@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="../../External/AngryWasp.Tools.MonoRepo/AngryWasp.Build/AngryWasp.Build.Library.targets"/>
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../External/AngryWasp.Tools.MonoRepo/Angrywasp.Cli/AngryWasp.Cli.csproj"/>
+    <ProjectReference Include="../../External/AngryWasp.Tools.MonoRepo/Angrywasp.Cryptography/AngryWasp.Cryptography.csproj"/>
+    <ProjectReference Include="../../External/AngryWasp.Tools.MonoRepo/Angrywasp.Helpers/AngryWasp.Helpers.csproj"/>
+    <ProjectReference Include="../../External/AngryWasp.Tools.MonoRepo/Angrywasp.Logger/AngryWasp.Logger.csproj"/>
+    <ProjectReference Include="../../External/AngryWasp.Tools.MonoRepo/Angrywasp.Net/AngryWasp.Net.csproj"/>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Nethereum.Signer" Version="4.12.0"/>
+  </ItemGroup>
+</Project>

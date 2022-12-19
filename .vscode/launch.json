@@ -1,0 +1,43 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Node",
+            "type": "coreclr",
+            "request": "launch",
+            "windows": {
+                "program": "${workspaceRoot}/Bin/Binaries/Node.exe",
+            },
+            "osx": {
+                "program": "${workspaceRoot}/Bin/Binaries/Node",
+            },
+            "linux": {
+                "program": "${workspaceRoot}/Bin/Binaries/Node",
+            },
+            "cwd": "${workspaceRoot}",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "preLaunchTask": "build-debug",
+            "args": []
+        },
+        {
+            "name": "RPC Client",
+            "type": "coreclr",
+            "request": "launch",
+            "windows": {
+                "program": "${workspaceRoot}/Bin/Binaries/RpcClient.exe",
+            },
+            "osx": {
+                "program": "${workspaceRoot}/Bin/Binaries/RpcClient",
+            },
+            "linux": {
+                "program": "${workspaceRoot}/Bin/Binaries/RpcClient",
+            },
+            "cwd": "${workspaceRoot}",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "preLaunchTask": "build-debug",
+            "args": []
+        },
+    ]
+}
