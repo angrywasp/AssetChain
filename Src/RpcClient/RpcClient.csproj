@@ -1,17 +1,19 @@
 <Project Sdk="Microsoft.NET.Sdk">
-    <Import Project="../../External/AngryWasp.Tools.MonoRepo/AngryWasp.Build/AngryWasp.Build.Application.targets" />
+    <Import Project="../../External/AngryWasp.Build/AngryWasp.Build.Application.targets"/>
     <PropertyGroup>
         <Version>0.0.0.4</Version>
         <LangVersion>latest</LangVersion>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     </PropertyGroup>
     <ItemGroup>
-        <ProjectReference Include="../../External/AngryWasp.Tools.MonoRepo/Angrywasp.Cli/AngryWasp.Cli.csproj" />
-        <ProjectReference Include="../../External/AngryWasp.Tools.MonoRepo/Angrywasp.Cryptography/AngryWasp.Cryptography.csproj" />
-        <ProjectReference Include="../../External/AngryWasp.Tools.MonoRepo/Angrywasp.Helpers/AngryWasp.Helpers.csproj" />
-        <ProjectReference Include="../../External/AngryWasp.Tools.MonoRepo/Angrywasp.Json.Rpc/AngryWasp.Json.Rpc.csproj"/>
-        <ProjectReference Include="../../External/AngryWasp.Tools.MonoRepo/Angrywasp.Logger/AngryWasp.Logger.csproj" />
-        <ProjectReference Include="../../External/AngryWasp.Tools.MonoRepo/Angrywasp.Net/AngryWasp.Net.csproj" />
-        <ProjectReference Include="../Common/Common.csproj" />
+        <ProjectReference Include="../Common/Common.csproj"/>
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="AngryWasp.Cli" Version="*"/>
+        <PackageReference Include="AngryWasp.Cryptography" Version="*"/>
+        <PackageReference Include="AngryWasp.Helpers" Version="*"/>
+        <PackageReference Include="AngryWasp.Json.Rpc" Version="*"/>
+        <PackageReference Include="AngryWasp.Logger" Version="*"/>
+        <PackageReference Include="AngryWasp.Net" Version="*"/>
     </ItemGroup>
 </Project>
